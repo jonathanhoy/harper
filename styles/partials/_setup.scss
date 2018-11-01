@@ -4,101 +4,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-// @mixin test($fontsize) {
-//   font-size: ($fontsize * 10) + px;
-//   font-size: $fontsize + rem;
-// }
-
-// BASE STYLING
-.wrapper {
-  max-width: 1280px;
-  margin: 0 auto;
+html {
+  font-size: 62.5%;
 }
 
-.gallery-container {
-  display: flex;
-  .gallery-upper-image,
-  .gallery-upper-content,
-  .gallery-lower-image,
-  .gallery-lower-content {
-    width: 50%;
-  }
-  .gallery-upper-content-wrapper,
-  .gallery-lower-content-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    height: 100%;
-    width: 75%;
-  }
-}
-.gallery-container-lower {
-  flex-direction: row-reverse;
-}
-
-
-
-
-
-// MAYBE?
-
-.gallery {
-  border: 1px solid red;
-  position: relative;
-}
-
-.gallery-upper-image {
-  // position: relative;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  position: relative;
-  z-index: 200;
-}
-
-
-
-
-// 1ST SOLUTION
-
-// .gallery::before,
-// .gallery::after {
-//   content: "";
-//   position: absolute;
-//   // height: 50%;
-//   // width: 50%;
-//   background: green;
-// }
-
-// .gallery::before {
-//   left: 0;
-//   right: 45%;
-//   top: 50px;
-//   bottom: 50%;
-//   z-index: 100;
-// }
-
-// .gallery::after {
-
-// }
-
-
-
-
-
-// 2ND SOLUTION
-
-.gallery-upper-image::after {
-  content: "";
-  // height: 100%;
-  // width: 100%;
-  background: dodgerblue;
-  position: absolute;
-  right: 48%;
-  left: 0;
-  top: 20px;
-  bottom: 48%;
+body {
+  font-size: 1.6rem;
 }
