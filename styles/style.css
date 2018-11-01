@@ -131,3 +131,59 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto; }
+
+.gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .gallery-container .gallery-upper-image,
+  .gallery-container .gallery-upper-content,
+  .gallery-container .gallery-lower-image,
+  .gallery-container .gallery-lower-content {
+    width: 50%; }
+  .gallery-container .gallery-upper-content-wrapper,
+  .gallery-container .gallery-lower-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+    width: 75%; }
+
+.gallery-container-lower {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
+.gallery {
+  border: 1px solid red;
+  position: relative; }
+
+img {
+  display: block;
+  max-width: 100%;
+  position: relative;
+  z-index: 200; }
+
+.gallery-upper-image::after {
+  content: "";
+  background: dodgerblue;
+  position: absolute;
+  right: 48%;
+  left: 0;
+  top: 20px;
+  bottom: 48%; }
