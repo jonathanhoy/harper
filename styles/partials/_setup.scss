@@ -4,6 +4,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+.wrapper {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto;
+}
+
 html {
   font-size: 62.5%;
 }

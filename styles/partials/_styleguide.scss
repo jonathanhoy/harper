@@ -11,6 +11,7 @@ $whiteShade: rgb(246,246,246);
   line-height: 92px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: $primaryColor;
   font-size: ($fontSize * 10) + px;
   font-size: $fontSize + rem;
 }
@@ -19,6 +20,7 @@ $whiteShade: rgb(246,246,246);
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
+  color: $primaryColor;
   font-size: ($fontSize * 10) + px;
   font-size: $fontSize + rem; 
 }
@@ -30,6 +32,7 @@ $whiteShade: rgb(246,246,246);
   text-align: right;
   line-height: 29px;
   letter-spacing: 1px;
+  color: $primaryColor;
   font-size: ($fontSize * 10) + px;
   font-size: $fontSize + rem;
 }
@@ -40,6 +43,7 @@ $whiteShade: rgb(246,246,246);
   text-align: center;
   line-height: 32px;
   letter-spacing: 1px;
+  color: $primaryColor;
   font-size: ($fontSize * 10) + px;
   font-size: $fontSize + rem;
 }
@@ -48,10 +52,43 @@ $whiteShade: rgb(246,246,246);
   font-family: 'Cabin', sans-serif;
   font-weight: 400;
   line-height: 32px;
+  text-transform: uppercase;
+  color: $primaryColor;
   font-size: ($fontSize * 10) + px;
   font-size: $fontSize + rem;
 }
 
 h1 {
   @include heading-text-main(8);
+}
+
+h2 {
+  @include heading-text(4.2);
+}
+
+h3 {
+  @include heading-text(3.2);
+}
+
+h4 {
+  @include heading-text (2.4);
+}
+
+a {
+  @include menu-text(2);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+button {
+  @include button-text(2);
+}
+
+p {
+  @include body-text(2);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
 }
