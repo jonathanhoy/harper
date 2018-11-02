@@ -132,6 +132,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden; }
+
 .wrapper {
   max-width: 1280px;
   width: 80%;
@@ -161,6 +174,7 @@ h2 {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
+  text-transform: uppercase;
   color: #171717;
   font-size: 42px;
   font-size: 4.2rem; }
@@ -169,6 +183,7 @@ h3 {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
+  text-transform: uppercase;
   color: #171717;
   font-size: 32px;
   font-size: 3.2rem; }
@@ -177,6 +192,7 @@ h4 {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
+  text-transform: uppercase;
   color: #171717;
   font-size: 24px;
   font-size: 2.4rem; }
@@ -219,3 +235,7 @@ p {
 ul {
   padding: 0;
   list-style: none; }
+
+.blog__image {
+  -webkit-box-shadow: 10px 10px red, -100px 10px olive;
+  box-shadow: 10px 10px red, -100px 10px olive; }

@@ -1,9 +1,9 @@
 $primaryColor: rgb(23,23,23);
+$secondaryColor: rgb(246,246,246);
+$tertiary: rgb(104,176,193);
+$tertiaryLight: rgb(185,221,231);
+$tertiaryDark: rgb(34,114,132);
 $accentColor: rgb(243,141,141);
-$greyBlue: rgb(104,176,193);
-$duskBlue: rgb(34,114,132);
-$lightGreyBlue: rgb(185,221,231);
-$whiteShade: rgb(246,246,246);
 
 @mixin heading-text-main($fontSize) {
   font-family: 'Oswald', sans-serif;
@@ -20,6 +20,7 @@ $whiteShade: rgb(246,246,246);
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
+  text-transform: uppercase;
   color: $primaryColor;
   font-size: ($fontSize * 10) + px;
   font-size: $fontSize + rem; 
@@ -94,4 +95,8 @@ p {
 ul {
   padding: 0;
   list-style: none;
+}
+
+.blog__image {
+  box-shadow: 10px 10px red, -100px 10px olive;
 }

@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Blog</title>
   <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:700" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <link rel="icon" href="./assets/favicon.png"/>
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -15,16 +15,77 @@
   <header class="header">
     <div class="wrapper">
       <nav class="header__navigation">
-        <ul class="header__navigation__menu">
-          <li class="header__navigation__menu__item"><a href="" class="header__navigation__menu__link">Home</a></li>
-          <li class="header__navigation__menu__item"><a href="" class="header__navigation__menu__link">About</a></li>
-          <li class="header__navigation__menu__item"><a href="" class="header__navigation__menu__link"><h2>Harper</h2></a></li>
-          <li class="header__navigation__menu__item"><a href="" class="header__navigation__menu__link header__navigation__menu__link--active">Blog</a></li>
-          <li class="header__navigation__menu__item"><a href="" class="header__navigation__menu__link">Contact</a></li>
+        <ul class="header__menu">
+          <li class="header__item"><a href="" class="header__link">Home</a></li>
+          <li class="header__item"><a href="" class="header__link">About</a></li>
+          <li class="header__item"><a href="" class="header__link"><h2>Harper</h2></a></li>
+          <li class="header__item"><a href="" class="header__link header__link--active">Blog</a></li>
+          <li class="header__item"><a href="" class="header__link">Contact</a></li>
         </ul>
       </nav>
+      <h1 class="header__heading">Blog</h1>
     </div>
   </header>
   <!-- HEADER ENDS -->
+  <!-- MAIN BEGINS -->
+  <main>
+    <div class="wrapper">
+      <!-- ASIDE BEGINS -->
+      <aside class="blog-aside">
+        <div class="blog-aside__about">
+          <img src="./assets/blog-image-2.jpg" class="blog-aside__image" alt="">
+          <h4 class="blog-aside__heading">About Harper</h4>
+          <p class="blog-aside__text">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. Find out more.</p>
+        </div>
+        <div class="blog-aside__recent-posts">
+          <ul class="blog-aside__list">
+            <li class="blog-aside__item"><a href="" class="blog-aside__link">Donec facilisis tortor ut</a></li>
+            <li class="blog-aside__item"><a href="" class="blog-aside__link">Augue lacinia at viverra</a></li>
+            <li class="blog-aside__item"><a href="" class="blog-aside__link">Semper sed sapien metus</a></li>
+            <li class="blog-aside__item"><a href="" class="blog-aside__link">Scelerisque nec pharetra id</a></li>
+          </ul>
+        </div>
+      </aside>
+      <!-- ASIDE ENDS -->
+      <section class="blog-main">
+        <div class="blog-main__featured-post">
+          <h3 class="blog-main__heading">My Favourite Travel Destinations</h3>
+          <p class="blog-main__date">Monday October 8th, 2018 by Harper</p>
+          <p class="blog-main__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum magnam dolorum voluptatem laudantium, unde beatae, necessitatibus commodi, nostrum in vel nihil atque quod ipsum facilis natus odio dignissimos mollitia quam?</p>
+          <p class="blog-main__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptatibus nam. Delectus harum voluptas eaque illo eveniet. Mollitia, et ut error praesentium explicabo necessitatibus dolorum veniam voluptate rem nesciunt natus saepe dolorem facilis est vitae commodi repellendus! Vitae asperiores soluta adipisci tenetur inventore totam tempore delectus eius!</p>
+          <p class="blog-main__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet unde iste, sapiente tenetur provident aut veniam at numquam quod velit tempore officiis. Eligendi ea at facilis officia non tempora ipsum quaerat. Vitae placeat accusantium, corrupti necessitatibus obcaecati beatae sunt a saepe molestiae, aperiam dolorum cumque blanditiis facere porro! Quia quasi eveniet magnam vitae, nihil excepturi aliquam temporibus, quod ipsam numquam delectus expedita cumque? Quia distinctio omnis id voluptas, officiis dolorum facere accusamus beatae dolorem corporis repellendus debitis hic officia suscipit eligendi similique animi modi et commodi expedita excepturi atque. Ea corrupti aliquam iusto ex fugit voluptas odit quo odio incidunt, perspiciatis fugiat modi laboriosam! Non ea numquam error eum totam eveniet reiciendis voluptatum, sed, consectetur perspiciatis corrupti, distinctio repellat maiores.</p>
+          <p class="blog-main__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, deleniti deserunt porro animi maxime, eligendi illum eos iusto cum optio beatae commodi consectetur ducimus repudiandae fuga nihil quos labore corporis.</p>
+          <p class="blog-main__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptatibus nam. Delectus harum voluptas eaque illo eveniet. Mollitia, et ut error praesentium explicabo necessitatibus dolorum veniam voluptate rem nesciunt natus saepe dolorem facilis est vitae commodi repellendus! Vitae asperiores soluta adipisci tenetur inventore totam tempore delectus eius!</p>
+          <p class="blog-main__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet unde iste, sapiente tenetur provident aut veniam at numquam quod velit tempore officiis. Eligendi ea at facilis officia non tempora ipsum quaerat. Vitae placeat accusantium, corrupti necessitatibus obcaecati beatae sunt a saepe molestiae, aperiam dolorum cumque blanditiis facere porro! Quia quasi eveniet magnam vitae, nihil excepturi aliquam temporibus, quod ipsam numquam delectus expedita cumque? Quia distinctio omnis id voluptas, officiis dolorum facere accusamus beatae dolorem corporis repellendus debitis hic officia suscipit eligendi similique animi modi et commodi expedita excepturi atque. Ea corrupti aliquam iusto ex fugit voluptas odit quo odio incidunt, perspiciatis fugiat modi laboriosam! Non ea numquam error eum totam eveniet reiciendis voluptatum, sed, consectetur perspiciatis corrupti, distinctio repellat maiores.</p>
+        </div>
+        <div class="blog-main__comments">
+          <div class="blog-main__comment-container">
+            <img src="./assets/blog-image-3.jpg" class="blog-main__comment-avatar" alt="">
+            <div class="blog-main__comment-post">
+              <p class="blog-main__comment-date">Tuesday October 9th, 2018 by Maggie</p>
+              <p class="blog-main__comment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium esse vel distinctio quidem quam vitae ratione dolores repellendus, dolor accusantium placeat aut dicta consequatur perspiciatis optio natus harum est minus corporis, repudiandae, rem nobis eum.</p>
+            </div>
+          </div>
+          <div class="blog-main__comment-container">
+            <img src="./assets/blog-image-4.jpg" class="blog-main__comment-avatar" alt="">
+            <div class="blog-main__comment-post">
+              <p class="blog-main__comment-date">Wednesday October 10th, 2018 by Daisy</p>
+              <p class="blog-main__comment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In alias, maxime delectus tempora nemo modi enim repudiandae et esse quia aliquid nihil laborum? Vel, quia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="blog-main__reply">
+          <form action="" method="post" class="blog-main__form">
+            <input type="text" id="name" name="name" class="blog-main__name">
+            <label for="name">Name</label>
+            <input type="email" id="email" name="email" required class="blog-main__email">
+            <label for="email">Email address</label>
+            <textarea name="comment" id="comment" cols="30" rows="10" class="blog-main__comment"></textarea>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- MAIN ENDS -->
 </body>
 </html>
