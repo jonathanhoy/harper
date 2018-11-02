@@ -237,5 +237,5 @@ ul {
   list-style: none; }
 
 .blog__image {
-  -webkit-box-shadow: 10px 10px red, -100px 10px olive;
-  box-shadow: 10px 10px red, -100px 10px olive; }
+  -webkit-box-shadow: 20px 20px #b9dde7, -150px 20px #b9dde7;
+  box-shadow: 20px 20px #b9dde7, -150px 20px #b9dde7; }

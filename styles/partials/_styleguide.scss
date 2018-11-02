@@ -1,8 +1,8 @@
 $primaryColor: rgb(23,23,23);
 $secondaryColor: rgb(246,246,246);
-$tertiary: rgb(104,176,193);
-$tertiaryLight: rgb(185,221,231);
-$tertiaryDark: rgb(34,114,132);
+$tertiaryColor: rgb(104,176,193);
+$tertiaryColorLight: rgb(185,221,231);
+$tertiaryColorDark: rgb(34,114,132);
 $accentColor: rgb(243,141,141);
 
 @mixin heading-text-main($fontSize) {
@@ -98,5 +98,5 @@ ul {
 }
 
 .blog__image {
-  box-shadow: 10px 10px red, -100px 10px olive;
+  box-shadow: 20px 20px $tertiaryColorLight, -150px 20px $tertiaryColorLight;
 }
