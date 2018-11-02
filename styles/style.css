@@ -143,6 +143,10 @@ html {
 body {
   font-size: 1.6rem; }
 
+img {
+  max-width: 100%;
+  display: block; }
+
 h1 {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
@@ -196,7 +200,11 @@ button {
   text-align: center;
   line-height: 32px;
   letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 20px;
   color: #171717;
+  background: #f38d8d;
   font-size: 20px;
   font-size: 2rem; }
 
@@ -204,7 +212,6 @@ p {
   font-family: 'Cabin', sans-serif;
   font-weight: 400;
   line-height: 32px;
-  text-transform: uppercase;
   color: #171717;
   font-size: 20px;
   font-size: 2rem; }

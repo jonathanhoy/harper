@@ -6,25 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Harper</title>
   <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <!-- HEADER BEGINS -->
-  <header class="main-header">
+  <header class="header">
     <div class="wrapper">
-      <nav class-="navigation">
-        <ul class="navigation__menu">
-          <li class="navigation__menu-item"><a href="" class="navigation__menu-link">Home</a></li>
-          <li class="navigation__menu-item"><a href="" class="navigation__menu-link">About</a></li>
-          <li class="navigation__menu-item"><a href="" class="navigation__menu-link"><h2>Harper</h2></a></li>
-          <li class="navigation__menu-item"><a href="" class="navigation__menu-link">Blog</a></li>
-          <li class="navigation__menu-item"><a href="" class="navigation__menu-link">Contact</a></li>
+      <nav class-="header__navigation">
+        <ul class="header__navigation__menu">
+          <li class="header__navigation__menu__item"><a href="" class="header__navigation__menu__link header__navigation__menu__link--active">Home</a></li>
+          <li class="header__navigation__menu__item"><a href="" class="header__navigation__menu__link">About</a></li>
+          <li class="header__navigation__menu__item"><a href="" class="header__navigation__menu__link"><h2>Harper</h2></a></li>
+          <li class="header__navigation__menu__item"><a href="" class="header__navigation__menu__link">Blog</a></li>
+          <li class="header__navigation__menu__item"><a href="" class="header__navigation__menu__link">Contact</a></li>
         </ul>
       </nav>
       <img src="../assets/home-image-1.jpg" class="main-header__headshot" alt="">
       <div class="header__heading">
-        <h1>Harper</h1>
-        <img src="../assets/circle-text.png" class="header__heading__accent" alt="">
+        <h1 class="header__heading__content">Harper</h1>
+        <img src="../assets/circle-text.png" class="header__heading__image" alt="">
       </div>
     </div>
   </header>
@@ -32,14 +34,89 @@
   <!-- MAIN BEGINS -->
   <main>
     <!-- ABOUT BEGINS -->
-    <div class="wrapper">
-      <section class="about">
-        <h2>Who's Harper?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique ue. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis.</p>
-        <button>Find out more</button>
-      </section>
-    </div>
+    <section class="about">
+      <div class="wrapper">
+        <div class="about__content">
+          <h2 class="about__content__heading">Who's Harper?</h2>
+          <p class="about__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique ue. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis.</p>
+          <button class="about__content__button">Find out more</button>
+        </div>
+      </div>
+    </section>
     <!-- ABOUT ENDS -->
+    <!-- HERO BEGINS -->
+    <section class="hero">
+      <img src="../assets/home-image-2.jpg" class="hero__banner" alt="">
+    </section>
+    <!-- HERO ENDS -->
+    <!-- LINKS BEGINS -->
+    <section class="links">
+      <div class="wrapper">
+        <nav class="links__navigation">
+          <ul class="links__navigation__menu">
+            <li class="links__navigation__menu__item">
+              <a href="" class="links__navigation__menu__item__link"><i class="fas fa-image"></i>Photos</a>
+              <p class="links__navigation__menu__item__text">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+            </li>
+            <li class="links__navigation__menu__item">
+              <a href="" class="links__navigation__menu__item__link"><i class="fas fa-user"></i>About</a>
+              <p class="links__navigation__menu__item__text">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+            </li>
+            <li class="links__navigation__menu__item">
+              <a href="" class="links__navigation__menu__item__link"><i class="fas fa-desktop"></i>Blog</a>
+              <p class="links__navigation__menu__item__text">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+            </li>
+            <li class="links__navigation__menu__item">
+              <a href="" class="links__navigation__menu__item__link"><i class="fas fa-phone"></i>Contact Me</a>
+              <p class="links__navigation__menu__item__text">Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- LINKS ENDS -->
+    <!-- BLOG BEGINS -->
+    <section class="blog">
+      <div class="wrapper">
+        <div class="blog__blog-upper">
+          <div class="blog__blog-upper__image">
+            <img src="../assets/home-image-3.jpg" alt="">
+          </div>
+          <div class="blog__content">
+            <h2 class="blog__content__heading">Harper's Travels</h2>
+            <p class="blog__content__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis.</p>
+            <button class="blog__content__button">Read more</button>
+          </div>
+        </div>
+        <div class="blog__blog-lower">
+          <div class="blog__blog-lower__image">
+            <img src="../assets/home-image-4.jpg" alt="">
+          </div>
+          <div class="blog__content">
+            <h2 class="blog__content__heading">Harper's Travels</h2>
+            <p class="blog__content__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare
+              condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at,
+              consectetur vel turpis.</p>
+            <button class="blog__content__button">Read more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BLOG ENDS -->
+    <!-- ASIDE BEGINS -->
+    <aside class="aside">
+      <div class="wrapper">
+        <div class="aside__image">
+          <img src="../assets/home-image-5.jpg" alt="">
+        </div>
+        <div class="aside__content">
+          <h2 class="aside__content__heading">Harper's Journey</h2>
+          <p class="aside__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis.</p>
+          <button class="aside__content__button">Find out more</button>
+        </div>
+      </div>
+    </aside>
+    <!-- ASIDE ENDS -->
   </main>
   <!-- MAIN ENDS -->
 </body>
