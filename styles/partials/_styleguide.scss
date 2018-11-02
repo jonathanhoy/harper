@@ -84,7 +84,7 @@ a {
   text-decoration: none;
 }
 
-button {
+button, [type="submit"] {
   @include button-text(2);
 }
 

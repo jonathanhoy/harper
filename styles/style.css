@@ -210,7 +210,7 @@ a {
   text-transform: uppercase;
   text-decoration: none; }
 
-button {
+button, [type="submit"] {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   text-align: center;
