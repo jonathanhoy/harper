@@ -1,19 +1,39 @@
 .extra-links {
   background: $secondaryColor;
+  padding: 100px 0 150px 0;
   &__menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   &__item {
-    width: 50%;
+    width: 45%;
+    margin-bottom: 60px;
     padding: 10px;
     border: 1px solid green;
+    display: flex;
+    flex-direction: column;
   }
-  &__icon::after {
-    content: "";
-    height: 15px;
-    width: 15px;
+  &__link-container {
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
     background: $tertiaryColorLight;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__link-text {
+    @include heading-text(32);
+    margin-left: 20px;
+  }
+  &__text {
+    margin: 25px 0 0 70px;
+    width: calc(100% - 70px);
   }
 }
