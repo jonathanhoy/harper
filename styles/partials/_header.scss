@@ -1,6 +1,5 @@
 .header {
-  background: $tertiaryColorLight;
-  background: linear-gradient(to bottom, $tertiaryColorLight 0%,$tertiaryColorLight 90%, $secondaryColor 90%, $secondaryColor 100%); /* W3C */
+  background: linear-gradient(to bottom, $tertiaryColorLight 0%,$tertiaryColorLight calc(100% - 50px), $secondaryColor calc(100% - 50px), $secondaryColor 100%);
   &__main-container {
     display: flex;
     justify-content: space-between;
@@ -46,14 +45,10 @@
 
 .about {
   background: $secondaryColor;
-  padding: 40px 0 115px 0;
+  padding: 50px 0 100px 0;
   .wrapper {
     display: flex;
-  }
-  .wrapper::before {
-    content: "";
-    display: block;
-    flex-basis: 47%;
+    justify-content: flex-end;
   }
   &__content {
     width: 53%;
