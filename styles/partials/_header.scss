@@ -1,0 +1,42 @@
+.header {
+  background: $tertiaryColorLight;
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__image-container {
+    width: 40%;
+  }
+  &__image {
+    box-shadow: 20px 20px white;
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__heading {
+    @include heading-text-large(80);
+    margin-left: 100px;
+    position: relative;
+  }
+  &__accent {
+    position: absolute;
+    width: 35%;
+    right: -30px;
+    top: -30px;
+  }
+}
+
+.navigation {
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+  &__link--active {
+    color: $secondaryColor;
+  }
+}

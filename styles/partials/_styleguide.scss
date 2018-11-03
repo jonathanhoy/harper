@@ -5,15 +5,15 @@ $tertiaryColorLight: rgb(185,221,231);
 $tertiaryColorDark: rgb(34,114,132);
 $accentColor: rgb(243,141,141);
 
-@mixin heading-text-main($fontSize) {
+@mixin heading-text-large($fontSize) {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   line-height: 92px;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: $primaryColor;
-  font-size: ($fontSize * 10) + px;
-  font-size: $fontSize + rem;
+  font-size: $fontSize * 1px;
+  font-size: ($fontSize/10) * 1rem;
 }
 
 @mixin heading-text($fontSize) {
@@ -22,8 +22,8 @@ $accentColor: rgb(243,141,141);
   letter-spacing: 1px;
   text-transform: uppercase;
   color: $primaryColor;
-  font-size: ($fontSize * 10) + px;
-  font-size: $fontSize + rem; 
+  font-size: $fontSize * 1px;
+  font-size: ($fontSize/10) * 1rem; 
 }
 
 @mixin menu-text($fontSize) {
@@ -34,8 +34,8 @@ $accentColor: rgb(243,141,141);
   line-height: 29px;
   letter-spacing: 1px;
   color: $primaryColor;
-  font-size: ($fontSize * 10) + px;
-  font-size: $fontSize + rem;
+  font-size: $fontSize * 1px;
+  font-size: ($fontSize/10) * 1rem;
 }
 
 @mixin button-text($fontSize) {
@@ -49,8 +49,8 @@ $accentColor: rgb(243,141,141);
   padding: 10px 20px;
   color: $primaryColor;
   background: $accentColor;
-  font-size: ($fontSize * 10) + px;
-  font-size: $fontSize + rem;
+  font-size: $fontSize * 1px;
+  font-size: ($fontSize/10) * 1rem;
 }
 
 @mixin body-text($fontSize) {
@@ -58,41 +58,26 @@ $accentColor: rgb(243,141,141);
   font-weight: 400;
   line-height: 32px;
   color: $primaryColor;
-  font-size: ($fontSize * 10) + px;
-  font-size: $fontSize + rem;
-}
-
-h1 {
-  @include heading-text-main(8);
-}
-
-h2 {
-  @include heading-text(4.2);
-}
-
-h3 {
-  @include heading-text(3.2);
-}
-
-h4 {
-  @include heading-text (2.4);
+  font-size: $fontSize * 1px;
+  font-size: ($fontSize/10) * 1rem;
 }
 
 a {
-  @include menu-text(2);
+  @include menu-text(20);
   text-transform: uppercase;
   text-decoration: none;
 }
 
 button, [type="submit"] {
-  @include button-text(2);
+  @include button-text(20);
 }
 
 p {
-  @include body-text(2);
+  @include body-text(20);
 }
 
 ul {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
