@@ -1,0 +1,15 @@
+.about {
+  background: $secondaryColor;
+  padding: 45px 0 115px 0;
+  position: relative;
+  .wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__content {
+    width: 53%;
+  }
+  &__heading {
+    @include heading-text(42);
+  }
+}

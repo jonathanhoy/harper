@@ -1,12 +1,15 @@
 .header {
-  background: linear-gradient(to bottom, $tertiaryColorLight 0%,$tertiaryColorLight calc(100% - 50px), $secondaryColor calc(100% - 50px), $secondaryColor 100%);
+  background: linear-gradient(to bottom, $tertiaryColorLight 0%,$tertiaryColorLight calc(100% - 70px), $secondaryColor calc(100% - 70px), $secondaryColor 100%);
+  .wrapper {
+    padding-top: 25px;
+  }
   &__main-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
   &__image-container {
-    flex: 0 0 500px;
+    flex: 0 0 40%;
     // flex: 1 0 auto;
   }
   &__image {
@@ -19,14 +22,18 @@
     width: 53%;
   }
   &__heading-large {
-    @include heading-text-large(80);
+    @include heading-text-large(120);
     position: relative;
   }
   &__accent {
     position: absolute;
     width: 35%;
-    right: -30px;
-    top: -30px;
+    // DIMENSIONS FOR FONT-SIZE 80PX
+    // right: -30px;
+    // top: -30px;
+    // DIMENSIONS FOR FONT-SIZE 120PX
+    right: -40px;
+    top: -60px;
   }
 }
 
@@ -35,25 +42,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
   }
   &__link--active {
     color: $secondaryColor;
-  }
-}
-
-.about {
-  background: $secondaryColor;
-  padding: 50px 0 100px 0;
-  .wrapper {
-    display: flex;
-    justify-content: flex-end;
-  }
-  &__content {
-    width: 53%;
-  }
-  &__heading {
-    @include heading-text(42);
   }
 }

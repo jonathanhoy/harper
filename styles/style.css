@@ -147,7 +147,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .wrapper {
   max-width: 1280px;
-  width: 95%;
+  width: 80%;
   margin: 0 auto; }
 
 html {
@@ -205,9 +205,11 @@ ul {
   box-shadow: 20px 20px #b9dde7, -150px 20px #b9dde7; }
 
 .header {
-  background: -webkit-linear-gradient(top, #b9dde7 0%, #b9dde7 calc(100% - 50px), #f6f6f6 calc(100% - 50px), #f6f6f6 100%);
-  background: -o-linear-gradient(top, #b9dde7 0%, #b9dde7 calc(100% - 50px), #f6f6f6 calc(100% - 50px), #f6f6f6 100%);
-  background: linear-gradient(to bottom, #b9dde7 0%, #b9dde7 calc(100% - 50px), #f6f6f6 calc(100% - 50px), #f6f6f6 100%); }
+  background: -webkit-linear-gradient(top, #b9dde7 0%, #b9dde7 calc(100% - 70px), #f6f6f6 calc(100% - 70px), #f6f6f6 100%);
+  background: -o-linear-gradient(top, #b9dde7 0%, #b9dde7 calc(100% - 70px), #f6f6f6 calc(100% - 70px), #f6f6f6 100%);
+  background: linear-gradient(to bottom, #b9dde7 0%, #b9dde7 calc(100% - 70px), #f6f6f6 calc(100% - 70px), #f6f6f6 100%); }
+  .header .wrapper {
+    padding-top: 25px; }
   .header__main-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -219,8 +221,8 @@ ul {
     flex-wrap: wrap; }
   .header__image-container {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 500px;
-    flex: 0 0 500px; }
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%; }
   .header__image {
     -webkit-box-shadow: 20px 20px white;
     box-shadow: 20px 20px white; }
@@ -242,14 +244,14 @@ ul {
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #171717;
-    font-size: 80px;
-    font-size: 8rem;
+    font-size: 120px;
+    font-size: 12rem;
     position: relative; }
   .header__accent {
     position: absolute;
     width: 35%;
-    right: -30px;
-    top: -30px; }
+    right: -40px;
+    top: -60px; }
 
 .navigation__menu {
   display: -webkit-box;
@@ -261,7 +263,7 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 50%;
+  width: 40%;
   margin: 0 auto; }
 
 .navigation__link--active {
@@ -269,7 +271,8 @@ ul {
 
 .about {
   background: #f6f6f6;
-  padding: 50px 0 100px 0; }
+  padding: 45px 0 115px 0;
+  position: relative; }
   .about .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
