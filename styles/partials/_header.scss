@@ -1,12 +1,14 @@
 .header {
-  // height: 100vh;
   background: $tertiaryColorLight;
-  &__container {
+  background: linear-gradient(to bottom, $tertiaryColorLight 0%,$tertiaryColorLight 90%, $secondaryColor 90%, $secondaryColor 100%); /* W3C */
+  &__main-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   &__image-container {
-    width: 40%;
+    flex: 0 0 500px;
+    // flex: 1 0 auto;
   }
   &__image {
     box-shadow: 20px 20px white;
@@ -14,7 +16,8 @@
   &__content-container {
     display: flex;
     align-items: center;
-    width: 50%;
+    flex: 0 1 auto;
+    width: 53%;
   }
   &__heading-large {
     @include heading-text-large(80);
@@ -38,5 +41,24 @@
   }
   &__link--active {
     color: $secondaryColor;
+  }
+}
+
+.about {
+  background: $secondaryColor;
+  padding: 40px 0 115px 0;
+  .wrapper {
+    display: flex;
+  }
+  .wrapper::before {
+    content: "";
+    display: block;
+    flex-basis: 47%;
+  }
+  &__content {
+    width: 53%;
+  }
+  &__heading {
+    @include heading-text(42);
   }
 }

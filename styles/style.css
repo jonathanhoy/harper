@@ -146,7 +146,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden; }
 
 .wrapper {
-  max-width: 1080px;
+  max-width: 1280px;
   width: 95%;
   margin: 0 auto; }
 
@@ -205,16 +205,25 @@ ul {
   box-shadow: 20px 20px #b9dde7, -150px 20px #b9dde7; }
 
 .header {
-  background: #b9dde7; }
-  .header__container {
+  background: #b9dde7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b9dde7), color-stop(90%, #b9dde7), color-stop(90%, #f6f6f6), to(#f6f6f6));
+  background: -webkit-linear-gradient(top, #b9dde7 0%, #b9dde7 90%, #f6f6f6 90%, #f6f6f6 100%);
+  background: -o-linear-gradient(top, #b9dde7 0%, #b9dde7 90%, #f6f6f6 90%, #f6f6f6 100%);
+  background: linear-gradient(to bottom, #b9dde7 0%, #b9dde7 90%, #f6f6f6 90%, #f6f6f6 100%);
+  /* W3C */ }
+  .header__main-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
   .header__image-container {
-    width: 40%; }
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 500px;
+    flex: 0 0 500px; }
   .header__image {
     -webkit-box-shadow: 20px 20px white;
     box-shadow: 20px 20px white; }
@@ -225,7 +234,10 @@ ul {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 50%; }
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 53%; }
   .header__heading-large {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
@@ -257,6 +269,30 @@ ul {
 
 .navigation__link--active {
   color: #f6f6f6; }
+
+.about {
+  background: #f6f6f6;
+  padding: 40px 0 115px 0; }
+  .about .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .about .wrapper::before {
+    content: "";
+    display: block;
+    -ms-flex-preferred-size: 47%;
+    flex-basis: 47%; }
+  .about__content {
+    width: 53%; }
+  .about__heading {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #171717;
+    font-size: 42px;
+    font-size: 4.2rem; }
 
 .extra-links {
   background: #f6f6f6; }
