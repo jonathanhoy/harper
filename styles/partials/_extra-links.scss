@@ -1,0 +1,19 @@
+.extra-links {
+  background: $secondaryColor;
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid green;
+  }
+  &__icon::after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: $tertiaryColorLight;
+  }
+}
