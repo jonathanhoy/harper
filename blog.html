@@ -83,11 +83,13 @@
         <!-- REPLY BEGINS -->
         <div class="reply">
           <form action="" method="post" class="reply__form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Name" class="reply__name">
-            <label for="email">Email address</label>
-            <input type="email" id="email" name="email" required placeholder="Email address" class="reply__email">
-            <label for="comment">Comment</label>
+            <div class="reply__form-top">
+              <label for="name" class="visuallyhidden">Name</label>
+              <input type="text" id="name" name="name" placeholder="Name" class="reply__name">
+              <label for="email" class="visuallyhidden">Email address</label>
+              <input type="email" id="email" name="email" required placeholder="Email address" class="reply__email">
+            </div>
+            <label for="comment" class="visuallyhidden">Comment</label>
             <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment" class="reply__comment"></textarea>
             <input type="submit" value="Post comment">
           </form>
