@@ -1,6 +1,5 @@
 .blog {
-  // padding: 90px 0;
-  border: 1px solid red;
+  padding-bottom: 10px;
   &__container {
     display: flex;
   }
@@ -14,23 +13,23 @@
     box-shadow: 20px 20px $tertiaryColor, -200px 20px $tertiaryColor;
     position: relative;
     top: -45px;
+    left: -10px;
   }
   &__image-lower {
     box-shadow: 20px 20px $tertiaryColorLight, 200px 20px $tertiaryColorLight;
     position: relative;
     bottom: -45px;
+    left: -10px;
   }
   &__content-upper {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    padding: 0 0 25px 120px;
+    padding: 0 0 25px 110px;
   }
   &__content-lower {
-    padding-top: 45px;
-    padding-right: 100px;
-    padding-left: 10px;
+    padding: 45px 110px 0 0;
     display: flex;
     flex-direction: column;
   }
