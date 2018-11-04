@@ -661,4 +661,65 @@ ul {
   background-position: bottom; }
 
 .contact-main {
-  padding: 90px 0; }
+  padding: 90px 0;
+  background: #f6f6f6; }
+  .contact-main .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .contact-main .socials {
+    width: 30%;
+    padding: 40px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    background: white; }
+    .contact-main .socials__menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 66.66%; }
+    .contact-main .socials__icon {
+      font-size: 3rem;
+      color: #227284; }
+    .contact-main .socials__email {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: 0;
+      color: #171717;
+      font-size: 24px;
+      font-size: 2.4rem;
+      text-transform: none;
+      margin: 25px 0; }
+    .contact-main .socials__phone, .contact-main .socials__address {
+      font-family: 'Cabin', sans-serif;
+      font-weight: 400;
+      line-height: 32px;
+      color: #171717;
+      font-size: 20px;
+      font-size: 2rem;
+      font-weight: 400;
+      text-align: left;
+      text-transform: none; }
+    .contact-main .socials__city-prov, .contact-main .socials__postal-code {
+      margin: 0; }
+  .contact-main .contact {
+    width: 66.66%; }

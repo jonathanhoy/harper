@@ -5,4 +5,44 @@
 
 .contact-main {
   padding: 90px 0;
+  background: $secondaryColor;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .socials {
+    width: 30%;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: white;
+    &__menu {
+      display: flex;
+      justify-content: space-between;
+      width: 66.66%;
+    }
+    &__icon {
+      font-size: 3rem;
+      color: $tertiaryColorDark;
+    }
+    &__email {
+      @include heading-text(24)
+      text-transform: none;
+      margin: 25px 0;
+    }
+    &__phone, &__address {
+      @include body-text(20);
+      font-weight: 400;
+      text-align: left;
+      text-transform: none;
+    }
+    &__city-prov, &__postal-code {
+      margin: 0;
+    }
+  }
+  .contact {
+    width: 66.66%;
+  }
 }
