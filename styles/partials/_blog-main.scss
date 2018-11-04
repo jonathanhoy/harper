@@ -1,0 +1,48 @@
+.blog-container {
+  padding: 90px 0;
+  background: $secondaryColor;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__aside {
+    width: 30%;
+    .about {
+      background: white;
+      padding: 40px;
+      margin-bottom: 15px;
+      &__heading {
+        @include heading-text(24);
+        margin: 30px 0;
+      }
+      &__text {
+        margin: 0;
+      }
+      &__link {
+        @include body-text(20);
+        text-transform: none;
+        letter-spacing: normal;
+        font-weight: 700;
+        color: $tertiaryColorDark;
+      }
+    }
+    .recent-posts {
+      background: white;
+      padding: 40px;
+      &__heading {
+        @include heading-text(24);
+        margin-bottom: 30px;
+      }
+      &__item {
+        list-style: inside;
+      }
+      &__link {
+        @include body-text(20);
+        text-transform: none;
+      }
+    }
+  }
+  &__main {
+    width: 66.66%;
+  }
+}
