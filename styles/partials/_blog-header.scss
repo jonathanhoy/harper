@@ -1,0 +1,22 @@
+.blog-header {
+  height: 50vh;
+  background: url(../assets/blog-image-1.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__heading {
+    @include heading-text-large(80);
+    margin: 0;
+    position: relative;
+    bottom: -30px;
+    z-index: 100;
+  }
+}
+.navigation {
+  background: $tertiaryColorLight;
+  &__heading {
+    margin: 20px 0;
+  }
+}
