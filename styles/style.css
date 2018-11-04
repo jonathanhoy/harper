@@ -477,10 +477,10 @@ ul {
     padding: 6px 0;
     text-align: center; }
 
-.blog-header {
+.secondary-header {
   height: 50vh;
   background: url(../assets/blog-image-1.jpg);
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,7 +492,7 @@ ul {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  .blog-header__heading {
+  .secondary-header__heading {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     line-height: 92px;
@@ -612,45 +612,53 @@ ul {
       width: 86%; }
     .blog-container__main .comments__date, .blog-container__main .comments__text {
       margin: 0; }
-    .blog-container__main .reply__form {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column; }
-    .blog-container__main .reply__form-top {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
-    .blog-container__main .reply__name, .blog-container__main .reply__email, .blog-container__main .reply__comment {
-      font-family: 'Cabin', sans-serif;
-      font-weight: 400;
-      line-height: 32px;
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .form__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .form__name, .form__email, .form__comment, .form__message {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    line-height: 32px;
+    color: #171717;
+    font-size: 20px;
+    font-size: 2rem;
+    border: none; }
+    .form__name::-webkit-input-placeholder, .form__email::-webkit-input-placeholder, .form__comment::-webkit-input-placeholder, .form__message::-webkit-input-placeholder {
       color: #171717;
-      font-size: 20px;
-      font-size: 2rem;
-      border: none; }
-      .blog-container__main .reply__name::-webkit-input-placeholder, .blog-container__main .reply__email::-webkit-input-placeholder, .blog-container__main .reply__comment::-webkit-input-placeholder {
-        color: #171717;
-        opacity: 1; }
-      .blog-container__main .reply__name:-ms-input-placeholder, .blog-container__main .reply__email:-ms-input-placeholder, .blog-container__main .reply__comment:-ms-input-placeholder {
-        color: #171717;
-        opacity: 1; }
-      .blog-container__main .reply__name::-ms-input-placeholder, .blog-container__main .reply__email::-ms-input-placeholder, .blog-container__main .reply__comment::-ms-input-placeholder {
-        color: #171717;
-        opacity: 1; }
-      .blog-container__main .reply__name::placeholder, .blog-container__main .reply__email::placeholder, .blog-container__main .reply__comment::placeholder {
-        color: #171717;
-        opacity: 1; }
-    .blog-container__main .reply__name, .blog-container__main .reply__email {
-      width: 49%;
-      padding: 30px 38px; }
-    .blog-container__main .reply__comment {
-      padding: 38px;
-      margin: 20px 0;
-      height: 300px; }
+      opacity: 1; }
+    .form__name:-ms-input-placeholder, .form__email:-ms-input-placeholder, .form__comment:-ms-input-placeholder, .form__message:-ms-input-placeholder {
+      color: #171717;
+      opacity: 1; }
+    .form__name::-ms-input-placeholder, .form__email::-ms-input-placeholder, .form__comment::-ms-input-placeholder, .form__message::-ms-input-placeholder {
+      color: #171717;
+      opacity: 1; }
+    .form__name::placeholder, .form__email::placeholder, .form__comment::placeholder, .form__message::placeholder {
+      color: #171717;
+      opacity: 1; }
+  .form__name, .form__email {
+    width: 49%;
+    padding: 30px 38px; }
+  .form__comment, .form__message {
+    padding: 38px;
+    margin: 20px 0;
+    height: 300px; }
+
+.contact-header {
+  background: url(../assets/contact-image-1.jpg);
+  background-position: bottom; }
+
+.contact-main {
+  padding: 90px 0; }

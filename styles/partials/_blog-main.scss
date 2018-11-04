@@ -78,33 +78,32 @@
         margin: 0;
       }
     }
-    .reply {
-      &__form {
-        display: flex;
-        flex-direction: column;
-      }
-      &__form-top {
-        display: flex;
-        justify-content: space-between;
-      }
-      &__name, &__email, &__comment {
-        @include body-text(20);
-        border: none;
-        &::placeholder {
-          color: $primaryColor;
-          opacity: 1;
-        }
-      }
-      &__name, &__email {
-        width: 49%;
-        padding: 30px 38px;
-      }
-      &__comment {
-        padding: 38px;
-        margin: 20px 0;
-        height: 300px;
-      }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__name, &__email, &__comment, &__message {
+    @include body-text(20);
+    border: none;
+    &::placeholder {
+      color: $primaryColor;
+      opacity: 1;
     }
+  }
+  &__name, &__email {
+    width: 49%;
+    padding: 30px 38px;
+  }
+  &__comment, &__message {
+    padding: 38px;
+    margin: 20px 0;
+    height: 300px;
   }
 }
 

@@ -1,5 +1,7 @@
 @import 'partials/setup';
 @import 'partials/styleguide';
+
+// index.html
 @import 'partials/header';
 @import 'partials/about';
 @import 'partials/extra-links';
@@ -8,5 +10,9 @@
 @import 'partials/gallery';
 @import 'partials/footer';
 
+// blog.html
 @import 'partials/blog-header';
 @import 'partials/blog-main';
+
+// contact.html
+@import 'partials/contact';
