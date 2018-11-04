@@ -470,3 +470,11 @@ ul {
     justify-content: space-between; }
   .gallery__item {
     width: 31.25%; }
+
+.footer {
+  background: #171717; }
+  .footer__text {
+    color: #f6f6f6;
+    margin: 0;
+    padding: 6px 0;
+    text-align: center; }
