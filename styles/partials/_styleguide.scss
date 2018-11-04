@@ -47,7 +47,7 @@ $accentColor: rgb(243,141,141);
   letter-spacing: 1px;
   text-transform: uppercase;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 25px;
   color: $primaryColor;
   background: $accentColor;
   font-size: $fontSize * 1px;
@@ -81,8 +81,4 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.blog__image {
-  box-shadow: 20px 20px $tertiaryColorLight, -150px 20px $tertiaryColorLight;
 }
