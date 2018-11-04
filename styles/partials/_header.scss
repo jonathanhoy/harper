@@ -1,5 +1,5 @@
 .header {
-  background: linear-gradient(to bottom, $tertiaryColorLight 0%,$tertiaryColorLight calc(100% - 70px), $secondaryColor calc(100% - 70px), $secondaryColor 100%);
+  background: $tertiaryColorLight;
   .wrapper {
     padding-top: 25px;
   }
@@ -10,12 +10,12 @@
   }
   &__image-container {
     flex: 0 0 40%;
-    // flex: 1 0 auto;
   }
   &__image {
     box-shadow: 20px 20px white;
     position: relative;
     z-index: 100;
+    bottom: -65px;
   }
   &__content-container {
     display: flex;
@@ -24,18 +24,13 @@
     width: 53%;
   }
   &__heading-large {
-    @include heading-text-large(120);
+    @include heading-text-large(150);
     position: relative;
   }
   &__accent {
     position: absolute;
-    width: 35%;
-    // DIMENSIONS FOR FONT-SIZE 80PX
-    // right: -30px;
-    // top: -30px;
-    // DIMENSIONS FOR FONT-SIZE 120PX
-    right: -40px;
-    top: -60px;
+    right: -55px;
+    top: -90px;
   }
 }
 
