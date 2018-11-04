@@ -1,0 +1,10 @@
+.gallery {
+  padding: 90px 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 31.25%;
+  }
+}

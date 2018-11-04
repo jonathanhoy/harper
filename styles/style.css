@@ -458,3 +458,15 @@ ul {
   .additional__button {
     position: relative;
     bottom: -20px; }
+
+.gallery {
+  padding: 90px 0; }
+  .gallery__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .gallery__item {
+    width: 31.25%; }
