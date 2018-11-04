@@ -1,7 +1,28 @@
 .additional {
   padding-top: 150px;
+  padding-bottom: 90px;
   background: $secondaryColor;
   .wrapper {
     display: flex;
+    justify-content: space-between;
+  }
+  &__image-container {
+    width: calc((100% / 3 ) - 20px);
+  }
+  &__image {
+    box-shadow: 20px 20px $tertiaryColorDark;
+  }
+  &__content-container {
+    width: calc((100% / 3) * 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__heading {
+    @include heading-text(42);
+  }
+  &__text {
+    margin: 0;
   }
 }
