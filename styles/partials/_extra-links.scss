@@ -8,10 +8,9 @@
     justify-content: space-around;
   }
   &__item {
-    width: 45%;
+    width: 50%;
     margin-bottom: 60px;
     padding: 10px;
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
   }
@@ -33,7 +32,7 @@
     margin-left: 20px;
   }
   &__text {
-    margin: 25px 0 0 70px;
+    margin: 20px 0 0 70px;
     width: calc(100% - 70px);
   }
 }

@@ -308,10 +308,9 @@ ul {
     -ms-flex-pack: distribute;
     justify-content: space-around; }
   .extra-links__item {
-    width: 45%;
+    width: 50%;
     margin-bottom: 60px;
     padding: 10px;
-    border: 1px solid green;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -351,5 +350,5 @@ ul {
     font-size: 3.2rem;
     margin-left: 20px; }
   .extra-links__text {
-    margin: 25px 0 0 70px;
+    margin: 20px 0 0 70px;
     width: calc(100% - 70px); }
