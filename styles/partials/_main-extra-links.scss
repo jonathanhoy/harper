@@ -39,6 +39,7 @@
     width: calc(100% - 70px);
   }
   @media (max-width: 768px) {
+    padding: 50px 0;
     &__menu {
       flex-direction: column;
     }
