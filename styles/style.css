@@ -265,11 +265,17 @@ ul {
   .header__accent {
     position: absolute;
     right: -55px;
-    top: -90px; }
+    top: -90px;
+    border: 1px solid red; }
     @media (max-width: 1084px) {
       .header__accent {
         width: 40%;
         top: -75px; } }
+    @media (max-width: 890px) {
+      .header__accent {
+        width: 35%;
+        top: -50px;
+        right: -35px; } }
 
 .navigation__menu {
   display: -webkit-box;
@@ -293,6 +299,9 @@ ul {
   padding: 100px 0;
   position: relative;
   margin-bottom: 500px; }
+  @media (max-width: 768px) {
+    .about {
+      margin-bottom: 300px; } }
   .about .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -300,8 +309,14 @@ ul {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end; }
+    @media (max-width: 768px) {
+      .about .wrapper {
+        display: block; } }
   .about__content {
     width: 53%; }
+  @media (max-width: 768px) {
+    .about__content {
+      width: 100%; } }
   .about__heading {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
@@ -321,10 +336,17 @@ ul {
     right: 0;
     bottom: -500px;
     height: 500px; }
+    @media (max-width: 768px) {
+      .about::after {
+        bottom: -300px;
+        height: 300px; } }
 
 .extra-links {
   background: #f6f6f6;
   padding: 100px 0 150px 0; }
+  @media (max-width: 768px) {
+    .extra-links {
+      padding: 70px 0 70px 0; } }
   .extra-links__menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -382,6 +404,15 @@ ul {
   .extra-links__text {
     margin: 20px 0 0 70px;
     width: calc(100% - 70px); }
+  @media (max-width: 768px) {
+    .extra-links__menu {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .extra-links__item {
+      width: 100%;
+      margin-bottom: 30px; } }
 
 .blog {
   padding-bottom: 10px; }
@@ -389,6 +420,9 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media (max-width: 768px) {
+      .blog__container {
+        display: block; } }
   .blog__container-lower {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -396,6 +430,9 @@ ul {
     flex-direction: row-reverse; }
   .blog__cell {
     width: 50%; }
+    @media (max-width: 768px) {
+      .blog__cell {
+        width: 100%; } }
   .blog__image-upper {
     -webkit-box-shadow: 20px 20px #68b0c1, -200px 20px #68b0c1;
     box-shadow: 20px 20px #68b0c1, -200px 20px #68b0c1;
@@ -432,9 +469,15 @@ ul {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+  @media (max-width: 768px) {
+    .blog__heading-lower {
+      padding-top: 70px; } }
   .blog__button-lower {
     -ms-flex-item-align: end;
     align-self: flex-end; }
+    @media (max-width: 768px) {
+      .blog__button-lower {
+        margin-bottom: 70px; } }
   .blog__heading {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
@@ -456,8 +499,20 @@ ul {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    @media (max-width: 768px) {
+      .additional .wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
   .additional__image-container {
     width: calc((100% / 3 ) - 20px); }
+    @media (max-width: 768px) {
+      .additional__image-container {
+        width: 50%; } }
   .additional__image {
     -webkit-box-shadow: 20px 20px #227284;
     box-shadow: 20px 20px #227284; }
@@ -476,6 +531,10 @@ ul {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start; }
+    @media (max-width: 768px) {
+      .additional__content-container {
+        width: 100%;
+        padding-top: 70px; } }
   .additional__heading {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
@@ -586,6 +645,8 @@ ul {
         letter-spacing: normal;
         font-weight: 700;
         color: #227284; }
+      .blog-container__aside .about::after {
+        display: none; }
     .blog-container__aside .recent-posts {
       background: white;
       padding: 38px; }

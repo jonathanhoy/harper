@@ -5,9 +5,16 @@
   .wrapper {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__image-container {
     width: calc((100% / 3 ) - 20px);
+    @media (max-width: 768px) {
+      width: 50%;
+    }
   }
   &__image {
     box-shadow: 20px 20px $tertiaryColorDark;
@@ -18,6 +25,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    @media (max-width: 768px) {
+      width: 100%;
+      padding-top: 70px;
+    }
   }
   &__heading {
     @include heading-text(42);

@@ -25,6 +25,9 @@
         font-weight: 700;
         color: $tertiaryColorDark;
       }
+      &::after {
+        display: none;
+      }
     }
     .recent-posts {
       background: white;
