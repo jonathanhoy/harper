@@ -228,9 +228,6 @@ ul {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
     width: 53%; }
   .header__heading-large {
     font-family: 'Oswald', sans-serif;
@@ -242,40 +239,61 @@ ul {
     font-size: 150px;
     font-size: 15rem;
     position: relative; }
-    @media (max-width: 1084px) {
-      .header__heading-large {
-        font-family: 'Oswald', sans-serif;
-        font-weight: 700;
-        line-height: 92px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: #171717;
-        font-size: 120px;
-        font-size: 12rem; } }
-    @media (max-width: 890px) {
-      .header__heading-large {
-        font-family: 'Oswald', sans-serif;
-        font-weight: 700;
-        line-height: 92px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: #171717;
-        font-size: 100px;
-        font-size: 10rem; } }
-  .header__accent {
+  .header__heading-large::after {
+    content: "";
+    width: 182px;
+    height: 172px;
     position: absolute;
-    right: -55px;
+    background: url(../assets/circle-text.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     top: -90px;
-    border: 1px solid red; }
-    @media (max-width: 1084px) {
-      .header__accent {
-        width: 40%;
-        top: -75px; } }
-    @media (max-width: 890px) {
-      .header__accent {
-        width: 35%;
-        top: -50px;
-        right: -35px; } }
+    right: -55px; }
+  @media (max-width: 1084px) {
+    .header__heading-large {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      line-height: 92px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #171717;
+      font-size: 120px;
+      font-size: 12rem; }
+    .header__heading-large::after {
+      width: 145.6px;
+      height: 137.6px;
+      top: -65px;
+      right: -40px; } }
+  @media (max-width: 890px) {
+    .header__heading-large {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      line-height: 92px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #171717;
+      font-size: 100px;
+      font-size: 10rem; }
+    .header__heading-large::after {
+      width: 120.8px;
+      height: 113.7px;
+      top: -45px;
+      right: -35px; } }
+  @media (max-width: 768px) {
+    .header__main-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .header__content-container {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .header__heading-large {
+      margin-bottom: 0; } }
 
 .navigation__menu {
   display: -webkit-box;

@@ -1,8 +1,5 @@
 .header {
   background: $tertiaryColorLight;
-  .wrapper {
-    // border: 1px solid red;
-  }
   &__main-container {
     display: flex;
     justify-content: space-between;
@@ -20,32 +17,56 @@
   &__content-container {
     display: flex;
     align-items: center;
-    flex: 0 1 auto;
+    // flex: 0 1 auto;
     width: 53%;
   }
   &__heading-large {
     @include heading-text-large(150);
     position: relative;
-    @media (max-width: 1084px) {
+  }
+  &__heading-large::after {
+    content: "";
+    width: 182px;
+    height: 172px;
+    position: absolute;
+    background: url(../assets/circle-text.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -90px;
+    right: -55px;
+  }
+  @media (max-width: 1084px) {
+    &__heading-large {
       @include heading-text-large(120);
     }
-    @media (max-width: 890px) {
-      @include heading-text-large(100);
+    &__heading-large::after {
+      width: 145.6px;
+      height: 137.6px;
+      top: -65px;
+      right: -40px;
     }
   }
-  &__accent {
-    position: absolute;
-    right: -55px;
-    top: -90px;
-    border: 1px solid red;
-    @media (max-width: 1084px) {
-      width: 40%;
-      top: -75px;
+  @media (max-width: 890px) {
+    &__heading-large {
+      @include heading-text-large(100);
     }
-    @media (max-width: 890px) {
-      width: 35%;
-      top: -50px;
+    &__heading-large::after {
+      width: 120.8px;
+      height: 113.7px;
+      top: -45px;
       right: -35px;
+    }
+  }
+  @media (max-width: 768px) {
+    &__main-container {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &__content-container {
+      justify-content: center;
+    }
+    &__heading-large {
+      margin-bottom: 0;
     }
   }
 }
