@@ -242,23 +242,48 @@ ul {
     font-size: 150px;
     font-size: 15rem;
     position: relative; }
+    @media (max-width: 1084px) {
+      .header__heading-large {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+        line-height: 92px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #171717;
+        font-size: 120px;
+        font-size: 12rem; } }
+    @media (max-width: 890px) {
+      .header__heading-large {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+        line-height: 92px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #171717;
+        font-size: 100px;
+        font-size: 10rem; } }
   .header__accent {
     position: absolute;
     right: -55px;
     top: -90px; }
+    @media (max-width: 1084px) {
+      .header__accent {
+        width: 40%;
+        top: -75px; } }
 
 .navigation__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  width: 40%;
-  margin: 0 auto; }
+  align-items: center; }
+
+.navigation__item {
+  margin: 0 25px; }
 
 .navigation__link--active {
   color: #f6f6f6; }
@@ -266,7 +291,8 @@ ul {
 .about {
   background: #f6f6f6;
   padding: 100px 0;
-  position: relative; }
+  position: relative;
+  margin-bottom: 500px; }
   .about .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -285,6 +311,16 @@ ul {
     color: #171717;
     font-size: 42px;
     font-size: 4.2rem; }
+  .about::after {
+    content: "";
+    position: absolute;
+    background: url(../assets/home-image-2.jpg);
+    background-position: center;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    bottom: -500px;
+    height: 500px; }
 
 .extra-links {
   background: #f6f6f6;

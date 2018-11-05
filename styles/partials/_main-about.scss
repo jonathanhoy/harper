@@ -1,8 +1,8 @@
 .about {
   background: $secondaryColor;
-  // padding: 45px 0 115px 0;
   padding: 100px 0;
   position: relative;
+  margin-bottom: 500px;
   .wrapper {
     display: flex;
     justify-content: flex-end;
@@ -12,5 +12,16 @@
   }
   &__heading {
     @include heading-text(42);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background: url(../assets/home-image-2.jpg);
+    background-position: center;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    bottom: -500px;
+    height: 500px;
   }
 }

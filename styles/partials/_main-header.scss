@@ -25,21 +25,32 @@
   &__heading-large {
     @include heading-text-large(150);
     position: relative;
+    @media (max-width: 1084px) {
+      @include heading-text-large(120);
+    }
+    @media (max-width: 890px) {
+      @include heading-text-large(100);
+    }
   }
   &__accent {
     position: absolute;
     right: -55px;
     top: -90px;
+    @media (max-width: 1084px) {
+      width: 40%;
+      top: -75px;
+    }
   }
 }
 
 .navigation {
   &__menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 40%;
-    margin: 0 auto;
+  }
+  &__item {
+    margin: 0 25px;
   }
   &__link--active {
     color: $secondaryColor;
