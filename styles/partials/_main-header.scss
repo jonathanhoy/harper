@@ -70,17 +70,3 @@
     }
   }
 }
-
-.navigation {
-  &__menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  &__item {
-    margin: 0 25px;
-  }
-  &__link--active {
-    color: $secondaryColor;
-  }
-}
