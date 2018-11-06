@@ -10,4 +10,12 @@
   @media (max-width: 768px) {
     padding: 50px 0;
   }
+  @media (max-width: 500px) {
+    &__item {
+      width: 48%;
+    }
+    &__item:last-child {
+      display: none;
+    }
+  }
 }
