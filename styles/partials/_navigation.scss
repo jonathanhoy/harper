@@ -1,4 +1,5 @@
 .nav {
+  background: $tertiaryColorLight;
   &__menu {
     display: flex;
     justify-content: center;
@@ -24,6 +25,8 @@
     right: -2000px;
     background: $tertiaryColor;
     z-index: 200;
+    display: none;
+    // z-index: -100;
     transition: right 0.5s, color 0.5s;
   }
   &__mobile-menu {
@@ -49,17 +52,20 @@
     font-size: 3rem;
   }
   @media (max-width: 768px) {
-    position: absolute;
     &__menu {
       display: none;
     }
     &__toggle-label {
       display: block;
-      position: relative;
+      position: absolute;
       z-index: 300;
       font-size: 3rem;
       top: 20px;
       left: 20px;
+    }
+    &__mobile-menu-container {
+      z-index: 200;
+      display: block;
     }
     &__toggle-label--main-page {
       color: $secondaryColor;
@@ -73,8 +79,16 @@
       color: $primaryColor;
     }
   }
-  // @media (max-width: 420px) {
-
-  // }
+  @media (max-width: 480px) {
+    &__mobile-menu {
+      margin-top: 55px;
+    }
+    &__mobile-link {
+      font-size: 3.2rem;
+    }
+    &__mobile-social-icon {
+      font-size: 2.5rem;
+    }
+  }
 }
 
