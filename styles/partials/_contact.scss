@@ -3,7 +3,7 @@
   background-position: bottom;
 }
 
-.contact-main {
+.contact {
   padding: 90px 0;
   background: $secondaryColor;
   .wrapper {
@@ -11,14 +11,20 @@
     justify-content: space-between;
     align-items: flex-start;
   }
-  .socials {
+  .contact-main {
+    width: 66.66%;
+    @media (max-width: 768px) {
+      width: 80%;
+    }
+  }
+  .contact-aside {
     width: 30%;
     padding: 40px 30px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     background: white;
-    &__menu {
+    &__socials {
       display: flex;
       justify-content: space-between;
       width: 66.66%;
@@ -28,9 +34,8 @@
       color: $tertiaryColorDark;
     }
     &__email {
-      @include heading-text(24)
+      @include heading-text(24);
       text-transform: none;
-      margin: 25px 0;
     }
     &__phone, &__address {
       @include body-text(20);
@@ -41,8 +46,59 @@
     &__city-prov, &__postal-code {
       margin: 0;
     }
+    &__mobile-contact {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      align-items: center;
+      width: 15%;
+      &__socials {
+        flex-direction: column;
+        align-items: center;
+        .contact-aside__item {
+          margin-bottom: 15px;
+        }
+      }
+      &__desktop-contact {
+        display: none;
+      }
+      &__mobile-contact {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .contact-aside__item {
+          margin-bottom: 15px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      &__mobile-email, &__mobile-phone, &__mobile-address {
+        display: block;
+        font-size: 3rem;
+        color: $tertiaryColorDark;
+      }
+      &__contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .contact-aside__item {
+          margin-bottom: 15px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
   }
-  .contact {
-    width: 66.66%;
+}
+
+.contact-aside__desktop-contact {
+  .contact-aside__item:first-child {
+    margin: 25px 0;
+    @media (max-width: 768px) {
+      margin: 0;
+    }
   }
 }

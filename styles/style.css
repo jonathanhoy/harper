@@ -282,7 +282,7 @@ ul {
       right: -35px; } }
   @media (max-width: 768px) {
     .header {
-      height: 100vh;
+      height: 90vh;
       background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 33, 33, 0.2)), to(rgba(33, 33, 33, 0.2))), url(../assets/home-image-1.jpg);
       background: -webkit-linear-gradient(rgba(33, 33, 33, 0.2), rgba(33, 33, 33, 0.2)), url(../assets/home-image-1.jpg);
       background: -o-linear-gradient(rgba(33, 33, 33, 0.2), rgba(33, 33, 33, 0.2)), url(../assets/home-image-1.jpg);
@@ -345,13 +345,13 @@ ul {
     top: 0;
     bottom: 0;
     width: 100%;
-    right: -2000px;
+    right: -1000px;
     background: #68b0c1;
     z-index: 200;
     display: none;
-    -webkit-transition: right 0.5s, color 0.5s;
-    -o-transition: right 0.5s, color 0.5s;
-    transition: right 0.5s, color 0.5s; }
+    -webkit-transition: right 0.3s, color 0.3s;
+    -o-transition: right 0.3s, color 0.3s;
+    transition: right 0.3s, color 0.3s; }
   .nav__mobile-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -402,13 +402,14 @@ ul {
       left: 20px; }
     .nav__mobile-menu-container {
       z-index: 200;
-      display: block; }
+      display: block;
+      position: fixed; }
     .nav__toggle-label--main-page {
       color: #f6f6f6; }
     .nav__toggle-input:checked ~ .nav__mobile-menu-container {
-      -webkit-transition: right 0.5s, color 0.5s;
-      -o-transition: right 0.5s, color 0.5s;
-      transition: right 0.5s, color 0.5s;
+      -webkit-transition: right 0.3s, color 0.3s;
+      -o-transition: right 0.3s, color 0.3s;
+      transition: right 0.3s, color 0.3s;
       right: 0; }
     .nav__toggle-input:checked + .nav__toggle-label {
       position: fixed;
@@ -972,10 +973,10 @@ ul {
   background: url(../assets/contact-image-1.jpg);
   background-position: bottom; }
 
-.contact-main {
+.contact {
   padding: 90px 0;
   background: #f6f6f6; }
-  .contact-main .wrapper {
+  .contact .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -985,7 +986,12 @@ ul {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start; }
-  .contact-main .socials {
+  .contact .contact-main {
+    width: 66.66%; }
+    @media (max-width: 768px) {
+      .contact .contact-main {
+        width: 80%; } }
+  .contact .contact-aside {
     width: 30%;
     padding: 40px 30px;
     display: -webkit-box;
@@ -999,7 +1005,7 @@ ul {
     -ms-flex-align: start;
     align-items: flex-start;
     background: white; }
-    .contact-main .socials__menu {
+    .contact .contact-aside__socials {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1007,10 +1013,10 @@ ul {
       -ms-flex-pack: justify;
       justify-content: space-between;
       width: 66.66%; }
-    .contact-main .socials__icon {
+    .contact .contact-aside__icon {
       font-size: 3rem;
       color: #227284; }
-    .contact-main .socials__email {
+    .contact .contact-aside__email {
       font-family: 'Oswald', sans-serif;
       font-weight: 700;
       letter-spacing: 1px;
@@ -1019,9 +1025,8 @@ ul {
       color: #171717;
       font-size: 24px;
       font-size: 2.4rem;
-      text-transform: none;
-      margin: 25px 0; }
-    .contact-main .socials__phone, .contact-main .socials__address {
+      text-transform: none; }
+    .contact .contact-aside__phone, .contact .contact-aside__address {
       font-family: 'Cabin', sans-serif;
       font-weight: 400;
       line-height: 32px;
@@ -1031,7 +1036,66 @@ ul {
       font-weight: 400;
       text-align: left;
       text-transform: none; }
-    .contact-main .socials__city-prov, .contact-main .socials__postal-code {
+    .contact .contact-aside__city-prov, .contact .contact-aside__postal-code {
       margin: 0; }
-  .contact-main .contact {
-    width: 66.66%; }
+    .contact .contact-aside__mobile-contact {
+      display: none; }
+    @media (max-width: 768px) {
+      .contact .contact-aside {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 15%; }
+        .contact .contact-aside__socials {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .contact .contact-aside__socials .contact-aside__item {
+            margin-bottom: 15px; }
+        .contact .contact-aside__desktop-contact {
+          display: none; }
+        .contact .contact-aside__mobile-contact {
+          display: block;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .contact .contact-aside__mobile-contact .contact-aside__item {
+            margin-bottom: 15px; }
+            .contact .contact-aside__mobile-contact .contact-aside__item:last-child {
+              margin-bottom: 0; }
+        .contact .contact-aside__mobile-email, .contact .contact-aside__mobile-phone, .contact .contact-aside__mobile-address {
+          display: block;
+          font-size: 3rem;
+          color: #227284; }
+        .contact .contact-aside__contact {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .contact .contact-aside__contact .contact-aside__item {
+            margin-bottom: 15px; }
+            .contact .contact-aside__contact .contact-aside__item:last-child {
+              margin-bottom: 0; } }
+
+.contact-aside__desktop-contact .contact-aside__item:first-child {
+  margin: 25px 0; }
+  @media (max-width: 768px) {
+    .contact-aside__desktop-contact .contact-aside__item:first-child {
+      margin: 0; } }
