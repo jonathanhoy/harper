@@ -854,6 +854,13 @@ ul {
         font-size: 20px;
         font-size: 2rem;
         text-transform: none; }
+        .blog-container__aside .recent-posts__link:hover {
+          color: #f38d8d;
+          text-shadow: 2px 2px #171717;
+          -webkit-transition: color 0.3s, text-shadow 0.3s;
+          -o-transition: color 0.3s, text-shadow 0.3s;
+          transition: color 0.3s, text-shadow 0.3s;
+          text-shadow: none; }
   .blog-container__main {
     width: 66.66%; }
     .blog-container__main .featured-post {

@@ -46,6 +46,10 @@
       &__link {
         @include body-text(20);
         text-transform: none;
+        &:hover {
+          @include menu-text-hover($accentColor);
+          text-shadow: none;
+        }
       }
     }
   }
