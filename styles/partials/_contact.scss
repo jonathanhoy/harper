@@ -64,9 +64,16 @@
       font-weight: 400;
       text-align: left;
       text-transform: none;
+      &:hover {
+        @include menu-text-hover($accentColor);
+        text-shadow: none;
+      }
     }
     &__city-prov, &__postal-code {
       margin: 0;
+      &:hover {
+        color: $primaryColor;
+      }
     }
     &__item--mobile {
       display: none;
@@ -76,7 +83,6 @@
     width: 15%;
     justify-content: center;
     align-items: flex-start;
-    // border: 1px solid red;
     .socials {
       width: 100%;
       flex-direction: column;

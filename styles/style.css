@@ -1120,8 +1120,17 @@ ul {
     font-weight: 400;
     text-align: left;
     text-transform: none; }
+    .contact-sidebar .contact-info__phone:hover, .contact-sidebar .contact-info__address:hover {
+      color: #f38d8d;
+      text-shadow: 2px 2px #171717;
+      -webkit-transition: color 0.3s, text-shadow 0.3s;
+      -o-transition: color 0.3s, text-shadow 0.3s;
+      transition: color 0.3s, text-shadow 0.3s;
+      text-shadow: none; }
   .contact-sidebar .contact-info__city-prov, .contact-sidebar .contact-info__postal-code {
     margin: 0; }
+    .contact-sidebar .contact-info__city-prov:hover, .contact-sidebar .contact-info__postal-code:hover {
+      color: #171717; }
   .contact-sidebar .contact-info__item--mobile {
     display: none; }
   @media (max-width: 768px) {
