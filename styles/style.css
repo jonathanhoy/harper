@@ -395,29 +395,31 @@ ul {
   .nav__mobile-social-icon {
     font-size: 3rem; }
   @media (max-width: 768px) {
-    .nav__menu {
-      display: none; }
-    .nav__toggle-label {
-      display: block;
-      position: absolute;
-      z-index: 300;
-      font-size: 3rem;
-      top: 20px;
-      left: 20px; }
-    .nav__mobile-menu-container {
-      z-index: 200;
-      display: block;
-      position: fixed; }
-    .nav__toggle-label--main-page {
-      color: #f6f6f6; }
-    .nav__toggle-input:checked ~ .nav__mobile-menu-container {
-      -webkit-transition: right 0.3s, color 0.3s;
-      -o-transition: right 0.3s, color 0.3s;
-      transition: right 0.3s, color 0.3s;
-      right: 0; }
-    .nav__toggle-input:checked + .nav__toggle-label {
-      position: fixed;
-      color: #171717; } }
+    .nav {
+      position: static; }
+      .nav__menu {
+        display: none; }
+      .nav__toggle-label {
+        display: block;
+        position: absolute;
+        z-index: 300;
+        font-size: 3rem;
+        top: 20px;
+        left: 20px; }
+      .nav__mobile-menu-container {
+        z-index: 200;
+        display: block;
+        position: fixed; }
+      .nav__toggle-label--main-page {
+        color: #f6f6f6; }
+      .nav__toggle-input:checked ~ .nav__mobile-menu-container {
+        -webkit-transition: right 0.3s, color 0.3s;
+        -o-transition: right 0.3s, color 0.3s;
+        transition: right 0.3s, color 0.3s;
+        right: 0; }
+      .nav__toggle-input:checked + .nav__toggle-label {
+        position: fixed;
+        color: #171717; } }
   @media (max-width: 480px) {
     .nav__mobile-menu {
       margin-top: 55px; }
