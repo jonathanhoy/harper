@@ -39,6 +39,12 @@ $accentColor: rgb(243,141,141);
   font-size: ($fontSize/10) * 1rem;
 }
 
+@mixin menu-text-hover($color) {
+  color: $color;
+  text-shadow: 2px 2px $primaryColor;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
 @mixin button-text($fontSize) {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
@@ -52,6 +58,11 @@ $accentColor: rgb(243,141,141);
   background: $accentColor;
   font-size: $fontSize * 1px;
   font-size: ($fontSize/10) * 1rem;
+}
+
+@mixin button-text-active {
+  background-color: darken($accentColor, 10);
+  transition: background-color 0.2s;
 }
 
 @mixin body-text($fontSize) {
@@ -69,8 +80,16 @@ a {
   text-decoration: none;
 }
 
+a:hover, ,a:focus, a:active {
+  @include menu-text-hover($accentColor);
+}
+
 button, [type="submit"] {
   @include button-text(20);
+}
+
+button:active, [type="submit"]:active {
+  @include button-text-active;
 }
 
 p {

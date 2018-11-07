@@ -24,6 +24,10 @@
         letter-spacing: normal;
         font-weight: 700;
         color: $tertiaryColorDark;
+        &:hover {
+          @include menu-text-hover($accentColor);
+          text-shadow: none;
+        }
       }
       &::after {
         display: none;
@@ -102,24 +106,27 @@
     &__main {
       width: 100%;
       margin-bottom: 50px;
+      .comments {
+        &__container {
+          flex-direction: column;
+        }
+        &__avatar {
+          width: 15%;
+          margin-bottom: 20px;
+        }
+        &__date {
+          margin-bottom: 10px;
+        }
+        &__post {
+          width: 100%;
+        }
+      }
     }
   }
   @media (max-width: 480px) {
     padding: 45px 0 20px 0;
     .featured-post, .comments__container {
       padding: 20px;
-    }
-    .comments {
-      &__container {
-        flex-direction: column;
-      }
-      &__avatar {
-        width: 30%;
-        margin-bottom: 20px;
-      }
-      &__date {
-        margin-bottom: 10px;
-      }
     }
     &__aside {
       flex-direction: column;
