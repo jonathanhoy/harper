@@ -986,116 +986,68 @@ ul {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start; }
-  .contact .contact-main {
-    width: 66.66%; }
-    @media (max-width: 768px) {
-      .contact .contact-main {
-        width: 80%; } }
-  .contact .contact-aside {
-    width: 30%;
-    padding: 40px 30px;
+
+.sidebar {
+  width: 30%;
+  padding: 40px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  background: white; }
+  .sidebar .socials {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    background: white; }
-    .contact .contact-aside__socials {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      width: 66.66%; }
-    .contact .contact-aside__icon {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 66.66%; }
+    .sidebar .socials__icon {
       font-size: 3rem;
       color: #227284; }
-    .contact .contact-aside__email {
-      font-family: 'Oswald', sans-serif;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin: 0;
-      color: #171717;
-      font-size: 24px;
-      font-size: 2.4rem;
-      text-transform: none; }
-    .contact .contact-aside__phone, .contact .contact-aside__address {
-      font-family: 'Cabin', sans-serif;
-      font-weight: 400;
-      line-height: 32px;
-      color: #171717;
-      font-size: 20px;
-      font-size: 2rem;
-      font-weight: 400;
-      text-align: left;
-      text-transform: none; }
-    .contact .contact-aside__city-prov, .contact .contact-aside__postal-code {
-      margin: 0; }
-    .contact .contact-aside__mobile-contact {
-      display: none; }
-    @media (max-width: 768px) {
-      .contact .contact-aside {
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        width: 15%; }
-        .contact .contact-aside__socials {
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center; }
-          .contact .contact-aside__socials .contact-aside__item {
-            margin-bottom: 15px; }
-        .contact .contact-aside__desktop-contact {
-          display: none; }
-        .contact .contact-aside__mobile-contact {
-          display: block;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center; }
-          .contact .contact-aside__mobile-contact .contact-aside__item {
-            margin-bottom: 15px; }
-            .contact .contact-aside__mobile-contact .contact-aside__item:last-child {
-              margin-bottom: 0; }
-        .contact .contact-aside__mobile-email, .contact .contact-aside__mobile-phone, .contact .contact-aside__mobile-address {
-          display: block;
-          font-size: 3rem;
-          color: #227284; }
-        .contact .contact-aside__contact {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center; }
-          .contact .contact-aside__contact .contact-aside__item {
-            margin-bottom: 15px; }
-            .contact .contact-aside__contact .contact-aside__item:last-child {
-              margin-bottom: 0; } }
+  .sidebar .contact-info__item:first-child {
+    margin: 25px 0; }
+  .sidebar .contact-info__email {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #171717;
+    font-size: 24px;
+    font-size: 2.4rem;
+    text-transform: none; }
+  .sidebar .contact-info__phone, .sidebar .contact-info__address {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    line-height: 32px;
+    color: #171717;
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: left;
+    text-transform: none; }
+  .sidebar .contact-info__city-prov, .sidebar .contact-info__postal-code {
+    margin: 0; }
+  .sidebar .contact-info__item--mobile {
+    display: none; }
 
-.contact-aside__desktop-contact .contact-aside__item:first-child {
-  margin: 25px 0; }
-  @media (max-width: 768px) {
-    .contact-aside__desktop-contact .contact-aside__item:first-child {
-      margin: 0; } }
+.contact-main {
+  width: 66.66%; }
+  @media (max-width: 480px) {
+    .contact-main .form__top {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .contact-main .form__name, .contact-main .form__email {
+      width: 100%; }
+    .contact-main .form__name {
+      margin-bottom: 20px; } }

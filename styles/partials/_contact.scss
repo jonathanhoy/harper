@@ -11,27 +11,27 @@
     justify-content: space-between;
     align-items: flex-start;
   }
-  .contact-main {
-    width: 66.66%;
-    @media (max-width: 768px) {
-      width: 80%;
-    }
-  }
-  .contact-aside {
-    width: 30%;
-    padding: 40px 30px;
+}
+
+.sidebar {
+  width: 30%;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: white;
+  .socials {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background: white;
-    &__socials {
-      display: flex;
-      justify-content: space-between;
-      width: 66.66%;
-    }
+    justify-content: space-between;
+    width: 66.66%;
     &__icon {
       font-size: 3rem;
       color: $tertiaryColorDark;
+    }
+  }
+  .contact-info {
+    &__item:first-child {
+      margin: 25px 0;
     }
     &__email {
       @include heading-text(24);
@@ -46,59 +46,25 @@
     &__city-prov, &__postal-code {
       margin: 0;
     }
-    &__mobile-contact {
+    &__item--mobile {
       display: none;
-    }
-    @media (max-width: 768px) {
-      align-items: center;
-      width: 15%;
-      &__socials {
-        flex-direction: column;
-        align-items: center;
-        .contact-aside__item {
-          margin-bottom: 15px;
-        }
-      }
-      &__desktop-contact {
-        display: none;
-      }
-      &__mobile-contact {
-        display: block;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .contact-aside__item {
-          margin-bottom: 15px;
-          &:last-child {
-            margin-bottom: 0;
-          }
-        }
-      }
-      &__mobile-email, &__mobile-phone, &__mobile-address {
-        display: block;
-        font-size: 3rem;
-        color: $tertiaryColorDark;
-      }
-      &__contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .contact-aside__item {
-          margin-bottom: 15px;
-          &:last-child {
-            margin-bottom: 0;
-          }
-        }
-      }
     }
   }
 }
 
-.contact-aside__desktop-contact {
-  .contact-aside__item:first-child {
-    margin: 25px 0;
-    @media (max-width: 768px) {
-      margin: 0;
+.contact-main {
+  width: 66.66%;
+  @media (max-width: 480px) {
+    .form {
+      &__top {
+        flex-direction: column;
+      }
+      &__name, &__email {
+        width: 100%;
+      }
+      &__name {
+        margin-bottom: 20px;
+      }
     }
   }
 }
