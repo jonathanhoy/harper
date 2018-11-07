@@ -80,7 +80,7 @@ a {
   text-decoration: none;
 }
 
-a:hover, ,a:focus, a:active {
+a:hover ,a:focus, a:active {
   @include menu-text-hover($accentColor);
 }
 
