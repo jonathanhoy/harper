@@ -6,19 +6,28 @@
 .contact {
   padding: 90px 0;
   background: $secondaryColor;
+  @media (max-width: 420px) {
+    padding: 45px 0 20px 0;
+  }
   .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    @media (max-width: 768px) {
+      align-items: stretch;
+    }
+    @media (max-width: 420px) {
+      flex-direction: column-reverse;
+    }
   }
 }
 
-.sidebar {
+.contact-sidebar {
   width: 30%;
   padding: 40px 30px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-around;
   background: white;
   .socials {
     display: flex;
@@ -27,6 +36,7 @@
     &__icon {
       font-size: 3rem;
       color: $tertiaryColorDark;
+      margin-right: 15px;
     }
   }
   .contact-info {
@@ -50,11 +60,63 @@
       display: none;
     }
   }
+  @media (max-width: 768px) {
+    width: 15%;
+    align-items: stretch;
+    .socials {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      &__item {
+        margin-bottom: 15px;
+      }
+      &__icon {
+        margin-right: 0;
+      }
+    }
+    .contact-info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__item {
+        display: none;
+      }
+      &__item--mobile {
+        display: block;
+        margin-bottom: 15px;
+      }
+      &__item--mobile:last-child {
+        margin-bottom: 0;
+      }
+      &__mobile-icon {
+        font-size: 3rem;
+        color: $tertiaryColorDark;
+      }
+    }
+  }
+  @media (max-width: 420px) {
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    .socials {
+      flex-direction: row;
+    }
+    .contact-info {
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 20px;
+      &__item--mobile {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 .contact-main {
   width: 66.66%;
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
+    width: 81%;
     .form {
       &__top {
         flex-direction: column;
@@ -66,5 +128,8 @@
         margin-bottom: 20px;
       }
     }
+  }
+  @media (max-width: 480px) {
+    width: 100%;
   }
 }
