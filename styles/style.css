@@ -397,6 +397,12 @@ ul {
     font-size: 40px;
     font-size: 4rem;
     margin: 0; }
+    .nav__mobile-link:hover {
+      color: #f38d8d;
+      text-shadow: 2px 2px #171717;
+      -webkit-transition: color 0.3s, text-shadow 0.3s;
+      -o-transition: color 0.3s, text-shadow 0.3s;
+      transition: color 0.3s, text-shadow 0.3s; }
   .nav__mobile-social-menu {
     display: -webkit-box;
     display: -ms-flexbox;

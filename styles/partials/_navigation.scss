@@ -41,6 +41,9 @@
   &__mobile-link {
     @include menu-text(40);
     margin: 0;
+    &:hover {
+      @include menu-text-hover($accentColor);
+    }
   }
   &__mobile-social-menu {
     display: flex;
