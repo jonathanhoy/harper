@@ -757,6 +757,16 @@ ul {
     padding: 6px 0;
     text-align: center; }
 
+.portfolio-link {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+  color: white;
+  font-size: 20px;
+  font-size: 2rem; }
+  .portfolio-link:hover {
+    color: white; }
+
 .secondary-header {
   height: 50vh;
   background: url(../assets/blog-image-1.jpg);
